@@ -39,4 +39,4 @@ $ yarn dev:server
 
 ---
 
-Feito com 💙 José Renato Montagnana [👋🏻 Entre em contato!](https://www.linkedin.com/in/joserenato-devfullstack/)
+Feito com 💙 por José Renato Montagnana [👋🏻 Entre em contato!](https://www.linkedin.com/in/joserenato-devfullstack/)
