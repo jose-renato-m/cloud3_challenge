@@ -1,0 +1,11 @@
+{
+  "type": "mysql",
+  "host": "XXX.XXX.X.XX",
+  "port": 3306,
+  "username": "nuvem357_contato",
+  "password": "xxxxx@xxx",
+  "database": "nuvem357_contato",
+  "entities": [
+    "./src/models/*.ts"
+  ]
+}
