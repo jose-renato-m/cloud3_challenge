@@ -3,16 +3,16 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('contato')
 class Contact {
   @PrimaryGeneratedColumn('uuid')
-  id: string;
+  Id: string;
 
   @Column()
-  name: string;
+  Nome: string;
 
   @Column()
-  email: string;
+  Email: string;
 
   @Column()
-  telephone: number;
+  Telefone: number;
 }
 
 export default Contact;

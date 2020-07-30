@@ -13,13 +13,13 @@ contactsRouter.get('/', (request, response) => {
 });
 
 contactsRouter.post('/', (request, response) => {
-  const { name, email, telephone } = request.body;
+  const { Nome, Email, Telefone } = request.body;
 
   const contactsRepository = getCustomRepository(ContactsRepository);
   const contact = contactsRepository.create({
-    name,
-    email,
-    telephone,
+    Nome,
+    Email,
+    Telefone,
   });
 
   contactsRepository.save(contact);
