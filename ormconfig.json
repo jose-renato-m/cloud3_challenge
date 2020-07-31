@@ -1,10 +1,10 @@
 {
   "type": "mysql",
-  "host": "XXX.XXX.X.XX",
+  "host": "162.241.3.19",
   "port": 3306,
-  "username": "xxxxxXXX_xxxxxxx",
-  "password": "xxxxx@XXX",
-  "database": "xxxxxXXX_xxxxxxx",
+  "username": "nuvem357_contato",
+  "password": "senha@123",
+  "database": "nuvem357_contato",
   "synchronize": false,
   "logging": true,
   "entities": [
