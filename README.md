@@ -5,8 +5,8 @@
 ## 📝 Sobre
 
 <p>Esse desafio foi proposto por José Antonio, CEO da Nuvem3 Tecnologia.</p>
-<p>O desafio consiste em acessar um banco de dados <b>MySQL</b>, e nesse banco tem uma tabela de contatos (Id, Nome, Email, Telefone). Eu deveria acessar esse banco de dados e criar uma Rest API em Nodejs e ser capaz de realizar as 4 operações básicas (GET, POST,PUT e DELETE).</p>
-<p>Consegui acessar e visualizar o banco de dados através do aplicativo DBeaver e também consegui fazer a conexão do Node.js com o banco de dados usando <b>TypeORM</b> e configurando o arquivo ormconfig.json. Obtive sucesso em inserir, os dados na tabela.</p>
+<p>O desafio consiste em acessar um banco de dados <b>MySQL</b>, e nesse banco tem uma tabela de contatos (Id, Nome, Email, Telefone). Eu devo acessar esse banco de dados e criar uma Rest API em Nodejs e ser capaz de realizar as 4 operações básicas (GET, POST, PUT e DELETE).</p>
+<p>Consegui acessar e visualizar o banco de dados através do aplicativo DBeaver e também consegui fazer a conexão do Node.js com o banco de dados usando <b>TypeORM</b> e configurando o arquivo ormconfig.json. Obtive sucesso em listar, inserir, modificar e apagar registros da tabela do banco de dados, cumprindo portanto o desafio proposto.</p>
 
 ---
 

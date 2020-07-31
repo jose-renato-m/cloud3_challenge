@@ -27,18 +27,36 @@ contactsRouter.post('/', (request, response) => {
   return response.json(contact);
 });
 
-// contactsRouter.put('/:Id', (request, response) => {
-//   const { Id } = request.params;
+contactsRouter.put('/', async (request, response) => {
+  const { Id, Nome, Email, Telefone } = request.body;
 
-//   const contactsRepository = getCustomRepository(ContactsRepository);
-//   const contacts = contactsRepository.findOne();
-// });
+  const contactsRepository = getCustomRepository(ContactsRepository);
+  const contacts = await contactsRepository.findOne(Id);
 
-// contactsRouter.delete('/:Id', (request, response) => {
-//   const { Id } = request.params;
+  if (!contacts) {
+    return response.json({ message: 'Contato não encontrado.' });
+  }
 
-//   const contactsRepository = getCustomRepository(ContactsRepository);
-//   const contacts = contactsRepository.findOne();
-// });
+  contacts.Nome = Nome;
+  contacts.Email = Email;
+  contacts.Telefone = Telefone;
+  await contactsRepository.save(contacts);
+  return response.json(contacts);
+});
+
+contactsRouter.delete('/:Id', async (request, response) => {
+  const { Id } = request.params;
+
+  const contactsRepository = getCustomRepository(ContactsRepository);
+  const contacts = await contactsRepository.findOne(Id);
+
+  if (!contacts) {
+    return response.json({ message: 'Contato inexistente ou já deletado.' });
+  }
+
+  await contactsRepository.remove(contacts);
+  contactsRepository.save;
+  return response.json({ message: 'Contato deletado.' });
+});
 
 export default contactsRouter;
